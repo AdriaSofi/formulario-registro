@@ -1,0 +1,232 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #001a33;
+    display: flex;
+}
+
+.formulario-registro {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px; 
+    margin: 50px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario-registro h2 {
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fieldset-section {
+    margin-bottom: 30px;
+}
+
+.fieldset-section legend {
+    font-size: 20px;
+    color: #003366;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.campo-nombre-apellidos {
+    display: flex;
+    gap: 20px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.campo button {
+    width: 100%;
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.campo button:hover {
+    background-color: #001c3c;
+    transform: scale(1.05); 
+    transition: transform 0.2s ease-in-out;
+}
+
+.campo input:invalid,
+.campo select:invalid,
+.campo textarea:invalid {
+    border-color: #660033;
+}
+
+.campo input:valid,
+.campo select:valid,
+.campo textarea:valid {
+    border-color: #005dbb;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.campo label[for="foto-perfil"] {
+    font-size: 16px;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+#foto-perfil {
+    display: none;
+}
+
+.campo .foto-perfil-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.campo .foto-perfil-container label {
+    cursor: pointer; 
+    font-size: 16px;
+    color: #003366;
+    border: 2px solid #003366; 
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.campo .foto-perfil-container label:hover {
+    background-color: #e6f0ff;
+}
+
+.campo .foto-perfil-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.campo .foto-perfil-container span {
+    font-size: 14px;
+    color: #555;
+}
+
+.campo-nombre-apellidos input {
+    flex: 1; 
+    min-width: 0; 
+}
+
+.campo-nombre-apellidos input,
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+}
+
+
+.campo input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.campo input[type="date"]:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+.campo p a {
+    font-size: 14px;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.campo p a:hover {
+    text-decoration: underline;
+}
+
+.campo {
+    text-align: center;
+}
+
+.campo a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.campo a:hover {
+    text-decoration: underline;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-contenido {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
